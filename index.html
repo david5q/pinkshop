@@ -11,34 +11,48 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light">
+<div class="hero-wrapper" id="home">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-      <!-- Logo -->
       <a class="navbar-brand fw-bold" href="#">
-        <img src="Bright-removebg-preview (2).png" width="100" height="auto">
+        <img src="bright__1_-removebg-preview.png" width="139">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero" id="home">
-    <div class="container">
-      <h1>Welcome to Bright Essence</h1>
-      <p>Your one-stop shop for perfumes, skincare & freshness</p>
+  <section class="hero-content">
+    <div class="container text-white text-center py-5">
+      <h1 class="display-4">Welcome to Bright Essence</h1>
+      <p class="lead">Your one-stop shop for perfumes, skincare & freshness</p>
       <a href="#products" class="btn btn-primary mt-3">Shop Now</a>
     </div>
   </section>
+
+</div>
 
   <!-- Special Offer -->
   <section class="special-offer text-center py-4">

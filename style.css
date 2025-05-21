@@ -1,55 +1,67 @@
-body {
-    background-color: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
-    scroll-behavior: smooth;
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.hero-wrapper {
+  background-image: url('IMG-20250506-WA0040.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+  color: white;
+}
+
+.hero-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-wrapper * {
+  position: relative;
+  z-index: 2;
 }
 
 .navbar {
-    background-color: #ffc1cc;
-    padding: 0.5rem 0;
+  padding-top: 1rem;
+  background: transparent !important;
 }
 
-.navbar .navbar-brand img.logo {
-    height: 50px;
-    width: auto;
-}
-
-.navbar .navbar-brand,
 .navbar .nav-link {
-    color: #fff !important;
+  color: #fff !important;
+  font-weight: 500;
 }
 
 .navbar .nav-link:hover {
-    color: #333 !important;
+  color: #ffb6c1 !important;
 }
 
 .hero {
-    background-color: #ffc1cc;
-    color: #fff;
-    text-align: center;
-    padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  text-align: center;
+}
+.btn.btn-primary {
+  background-color: #ffb6c1;
+  border: none;
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin: 20px 0;
-}
-
-.btn-primary {
-    background-color: #fff;
-    color: #ffc1cc;
-    border: none;
-}
-
-.btn-primary:hover {
-    background-color: #ffebf0;
-    color: #ffc1cc;
+.btn.btn-primary:hover {
+  background-color: white;
+  transform: translateY(-2px);
+  color: black;
 }
 
 .category-img {
